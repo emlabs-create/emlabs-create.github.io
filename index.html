@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EM Labs</title>
+  <meta name="description" content="EM Labs projects and digital products.">
+  <style>
+    :root{
+      --bg:#f7f7f5;
+      --card:#ffffff;
+      --text:#171717;
+      --muted:#666a70;
+      --line:#e6e6e2;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    .wrap{
+      max-width:960px;
+      margin:0 auto;
+      padding:72px 24px;
+    }
+    .eyebrow{
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      font-size:12px;
+      color:var(--muted);
+      font-weight:700;
+    }
+    h1{
+      font-size:clamp(42px,8vw,72px);
+      line-height:1;
+      letter-spacing:-.04em;
+      margin:12px 0 18px;
+    }
+    .lead{
+      max-width:700px;
+      font-size:19px;
+      color:#44484d;
+      margin-bottom:36px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+    .card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:26px;
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
+    .card:hover{
+      transform:translateY(-2px);
+      box-shadow:0 12px 30px rgba(0,0,0,.05);
+    }
+    .card h2{
+      margin:0 0 8px;
+      font-size:22px;
+    }
+    .card p{
+      margin:0 0 14px;
+      color:var(--muted);
+    }
+    .go{
+      font-weight:700;
+    }
+    footer{
+      margin-top:54px;
+      padding-top:24px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">EM Labs</div>
+    <h1>Projects & digital products</h1>
+    <p class="lead">
+      A simple home for EM Labs projects, experiments, and product pages.
+    </p>
+
+    <div class="grid">
+      <a class="card" href="/akosapp/">
+        <h2>AKOS</h2>
+        <p>Access the AKOS legal center, including Privacy Notice and Terms & Conditions.</p>
+        <span class="go">Open AKOS →</span>
+      </a>
+    </div>
+
+    <footer>
+      © 2026 EM Labs
+    </footer>
+  </main>
+</body>
+</html>
